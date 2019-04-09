@@ -133,4 +133,30 @@ table {
 html,
 body {
   height: 100%;
+  background: #24282c;
+}
+html .container,
+body .container {
+  width: device-width;
+}
+html .container .navigation-bar,
+body .container .navigation-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  background: black;
+  width: 100%;
+}
+html .container img,
+body .container img {
+  height: 100px;
+  width: 150px;
+}
+@media (maxwidth: 500px) {
+  html .container .navigation-tabs,
+  body .container .navigation-tabs {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
 }
