@@ -138,6 +138,12 @@ body {
   height: 100%;
   background: #24282c;
 }
+@media (max-width: 500px) {
+  html,
+  body {
+    width: 500px;
+  }
+}
 html .container,
 body .container {
   width: device-width;
@@ -275,6 +281,35 @@ body .container .top-content .top-content-text p {
     width: 60%;
   }
 }
+html .container .bottom-content,
+body .container .bottom-content {
+  display: flex;
+  flex-direction: row;
+  margin: 50px auto;
+  padding-bottom: 15px;
+  width: 80%;
+}
+@media (max-width: 1365px) {
+  html .container .bottom-content,
+  body .container .bottom-content {
+    display: inherit;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  html .container .bottom-content,
+  body .container .bottom-content {
+    width: 400px;
+  }
+}
+html .container .bottom-content .box,
+body .container .bottom-content .box {
+  margin-top: 20px;
+}
+html .container .bottom-content p,
+body .container .bottom-content p {
+  margin-top: 20px;
+}
 html .container footer,
 body .container footer {
   display: flex;
@@ -313,5 +348,5 @@ body .container footer .footer-tabs a:hover {
 html .container footer p,
 body .container footer p {
   margin: auto auto;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
