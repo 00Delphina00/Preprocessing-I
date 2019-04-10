@@ -61,6 +61,13 @@ html, body {
 	background: rgb(36, 40, 44);
 	.container{
 		width: device-width;
+		@media (max-width: 500px){
+			width: 500px;
+			margin: 0px;
+			display: flex;
+			flex-direction: column;
+			align-items: start;
+		}
 
 		.navigation-bar{
 			display: flex;
@@ -70,16 +77,13 @@ html, body {
 			width: 80%;	
 			margin: auto auto;
 			/*border: 1px solid red;*/
-
-			@media (max-width: 1365px){
-
-				justify-content: center;
-				}
-		
+			
 			img {
 				height: 60px;
-				width: 90x;		
-			}
+				width: 90x;	
+			/*	border: 1px solid red;*/	
+				
+				}
 
 			.navigation-tabs {
 				display: flex;
@@ -88,17 +92,22 @@ html, body {
 				width: 45%;
 				margin: auto 0px;
 				/*border: 1px solid red;*/
-				}
+				@media (max-width: 676px){
+					font-size:1.000000rem;
+					}
 			
 			a {
 				text-decoration: none;
 				color: grey;
 				margin: 10px;
+				
 				}
+				
 			a:hover {
 				color: aqua;
 				}
-			}
+				}
+		}
 		.top-content {
 			display: flex;
 			flex-direction: row;
@@ -109,6 +118,9 @@ html, body {
 			@media (max-width: 1365px){
 				display: inherit;
 				flex-direction: column;
+				}
+			@media (max-width: 500px){
+				width: 400px;
 				}
 
 			img {
@@ -135,15 +147,26 @@ html, body {
 					@media (max-width: 875px){
 						font-size: 3.0rem;
 						}
+					@media (max-width: 677px) {
+						font-size: 2rem;
+					}
 					}
 				h2 {
 					margin-top: 20px;
 					font-size: 2rem;
+					@media (max-width: 677px){
+						font-size: 1.5rem;
+						}
 					}
 				p {
+					margin: auto auto;
 					font-size: 1.020000rem;
 					margin-top: 20px;
+					@media (max-width: 851px){
 
+						width: 60%;
+						
+						}
 					/*border: 1px solid red;*/
 					}
 				}
