@@ -20,7 +20,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -64,22 +64,41 @@ html, body {
 			flex-direction: row;
 			justify-content: start;
 			background: black;
-			width: 100%	
+			width: 100%;	
+			/*border: 1px solid red;*/
 
-			@media (max-width: 500px){
+			@media (max-content: 500px) {
 				display: flex;
-				flex-direction: column;
+				flex-flow: column nowrap;
+
 				order: 2;
 			}
-		}
-			img {
-				height: 100px;
-				width: 150px;
-			}
-			.navigation-tabs {
-				
 
+			img {
+				height: 60px;
+				width: 90x;
 			}
+
+			.navigation-tabs {
+				display: flex;
+				justify-content: space-evenly;
+				font-size: 1.600000rem;
+				width: 45%;
+				margin: auto 0px;
+				/*border: 1px solid red;*/
+			}
+	
+			a {
+				text-decoration: none;
+				color: grey;
+			}
+			a:hover {
+				color: aqua;
+			}
+
+		}	
+
+		
 
 	}
 }

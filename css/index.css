@@ -86,7 +86,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -146,17 +146,36 @@ body .container .navigation-bar {
   justify-content: start;
   background: black;
   width: 100%;
+  /*border: 1px solid red;*/
 }
-html .container img,
-body .container img {
-  height: 100px;
-  width: 150px;
-}
-@media (maxwidth: 500px) {
-  html .container .navigation-tabs,
-  body .container .navigation-tabs {
+@media (max-content: 500px) {
+  html .container .navigation-bar,
+  body .container .navigation-bar {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     order: 2;
   }
+}
+html .container .navigation-bar img,
+body .container .navigation-bar img {
+  height: 60px;
+  width: 90x;
+}
+html .container .navigation-bar .navigation-tabs,
+body .container .navigation-bar .navigation-tabs {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.6rem;
+  width: 45%;
+  margin: auto 0px;
+  /*border: 1px solid red;*/
+}
+html .container .navigation-bar a,
+body .container .navigation-bar a {
+  text-decoration: none;
+  color: grey;
+}
+html .container .navigation-bar a:hover,
+body .container .navigation-bar a:hover {
+  color: aqua;
 }
