@@ -183,10 +183,30 @@ body .container .navigation-bar a:hover {
 html .container .top-content,
 body .container .top-content {
   display: flex;
-  flex-direction: column;
-  margin: auto auto;
-  background-color: red;
-  border-radius: 40px;
-  border-color: 1px solid red;
+  flex-direction: row;
+  margin: 50px auto;
+  background-color: transparent;
+  border-color: 1px double black;
   width: 80%;
+}
+html .container .top-content img,
+body .container .top-content img {
+  height: 400px;
+  width: 400px;
+  border-radius: 15px;
+}
+html .container .top-content .top-content-text,
+body .container .top-content .top-content-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  align-items: center;
+}
+html .container .top-content h1,
+body .container .top-content h1 {
+  font-size: 4rem;
+}
+html .container .top-content h2,
+body .container .top-content h2 {
+  font-size: 2rem;
 }
