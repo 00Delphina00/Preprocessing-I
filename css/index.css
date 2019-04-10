@@ -1,1 +1,352 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-style: normal;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  color: grey;
+  height: 100%;
+  background: #24282c;
+}
+@media (max-width: 500px) {
+  html,
+  body {
+    width: 500px;
+  }
+}
+html .container,
+body .container {
+  width: device-width;
+}
+@media (max-width: 500px) {
+  html .container,
+  body .container {
+    width: 500px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+html .container .navigation-bar,
+body .container .navigation-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  background: black;
+  width: 80%;
+  margin: auto auto;
+  /*border: 1px solid red;*/
+}
+html .container .navigation-bar img,
+body .container .navigation-bar img {
+  height: 60px;
+  width: 90x;
+  /*	border: 1px solid red;*/
+}
+html .container .navigation-bar .navigation-tabs,
+body .container .navigation-bar .navigation-tabs {
+  display: flex;
+  justify-content: start;
+  font-size: 1.6rem;
+  width: 45%;
+  margin: auto 0px;
+  /*border: 1px solid red;*/
+}
+@media (max-width: 676px) {
+  html .container .navigation-bar .navigation-tabs,
+  body .container .navigation-bar .navigation-tabs {
+    font-size: 1rem;
+  }
+}
+html .container .navigation-bar .navigation-tabs a,
+body .container .navigation-bar .navigation-tabs a {
+  text-decoration: none;
+  color: grey;
+  margin: 10px;
+}
+html .container .navigation-bar .navigation-tabs a:hover,
+body .container .navigation-bar .navigation-tabs a:hover {
+  color: aqua;
+}
+html .container .top-content,
+body .container .top-content {
+  display: flex;
+  flex-direction: row;
+  margin: 50px auto;
+  padding-bottom: 15px;
+  border-bottom: 2px dotted black;
+  width: 80%;
+}
+@media (max-width: 1365px) {
+  html .container .top-content,
+  body .container .top-content {
+    display: inherit;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  html .container .top-content,
+  body .container .top-content {
+    width: 400px;
+  }
+}
+html .container .top-content img,
+body .container .top-content img {
+  height: 250px;
+  width: 250px;
+  border-radius: 15px;
+}
+@media (max-width: 1365px) {
+  html .container .top-content img,
+  body .container .top-content img {
+    display: inherit;
+    margin: auto;
+  }
+}
+html .container .top-content .top-content-text,
+body .container .top-content .top-content-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  align-items: center;
+}
+html .container .top-content .top-content-text h1,
+body .container .top-content .top-content-text h1 {
+  font-size: 4rem;
+}
+@media (max-width: 875px) {
+  html .container .top-content .top-content-text h1,
+  body .container .top-content .top-content-text h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 677px) {
+  html .container .top-content .top-content-text h1,
+  body .container .top-content .top-content-text h1 {
+    font-size: 2rem;
+  }
+}
+html .container .top-content .top-content-text h2,
+body .container .top-content .top-content-text h2 {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+@media (max-width: 677px) {
+  html .container .top-content .top-content-text h2,
+  body .container .top-content .top-content-text h2 {
+    font-size: 1.5rem;
+  }
+}
+html .container .top-content .top-content-text p,
+body .container .top-content .top-content-text p {
+  margin: auto auto;
+  font-size: 1.02rem;
+  margin-top: 20px;
+  /*border: 1px solid red;*/
+}
+@media (max-width: 851px) {
+  html .container .top-content .top-content-text p,
+  body .container .top-content .top-content-text p {
+    width: 60%;
+  }
+}
+html .container .bottom-content,
+body .container .bottom-content {
+  display: flex;
+  flex-direction: row;
+  margin: 50px auto;
+  padding-bottom: 15px;
+  width: 80%;
+}
+@media (max-width: 1365px) {
+  html .container .bottom-content,
+  body .container .bottom-content {
+    display: inherit;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  html .container .bottom-content,
+  body .container .bottom-content {
+    width: 400px;
+  }
+}
+html .container .bottom-content .box,
+body .container .bottom-content .box {
+  margin-top: 20px;
+}
+html .container .bottom-content p,
+body .container .bottom-content p {
+  margin-top: 20px;
+}
+html .container footer,
+body .container footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background: black;
+  width: 80%;
+  margin: auto auto;
+  /*border: 1px solid red;*/
+}
+html .container footer .footer-tabs,
+body .container footer .footer-tabs {
+  display: flex;
+  justify-content: start;
+  font-size: 1.6rem;
+  width: 45%;
+  margin: auto 0px;
+  /*border: 1px solid red;*/
+}
+@media (max-width: 676px) {
+  html .container footer .footer-tabs,
+  body .container footer .footer-tabs {
+    font-size: 1rem;
+  }
+}
+html .container footer .footer-tabs a,
+body .container footer .footer-tabs a {
+  text-decoration: none;
+  color: grey;
+  margin: 10px;
+}
+html .container footer .footer-tabs a:hover,
+body .container footer .footer-tabs a:hover {
+  color: aqua;
+}
+html .container footer p,
+body .container footer p {
+  margin: auto auto;
+  /*border: 1px solid red;*/
+}

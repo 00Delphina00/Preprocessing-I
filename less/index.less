@@ -20,7 +20,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -54,6 +54,199 @@ table {
 }
 
 html, body {
-    height: 100%;
-}
+	font-style: normal;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	color: grey;
+	height: 100%;
+	background: rgb(36, 40, 44);
+	@mobile: width 500px;
+	@black: #000000;
+	@bold: 600;
+
+	@media (max-width: @mobile){
+		@mobile;
+	}
+	.container{
+		width: device-width;
+		@media (max-width: @mobile){
+			@mobile;
+			margin: 0px;
+			display: flex;
+			flex-direction: column;
+			align-items: start;
+
+		.navigation-bar{
+			display: flex;
+			flex-direction: row;
+			justify-content: start;
+			background: @black;
+			width: 80%;	
+			margin: auto auto;
+			.observation-box;
+			
+			img {
+				height: 60px;
+				width: 90x;	
+			/*	border: 1px solid red;*/	
+				
+				}
+
+			.navigation-tabs {
+				display: flex;
+				justify-content: start;
+				font-size: 1.600000rem;
+				width: 45%;
+				margin: auto 0px;
+				/*border: 1px solid red;*/
+				@media (max-width: 676px){
+					font-size:1.000000rem;
+					}
+			
+			a {
+				text-decoration: none;
+				color: grey;
+				margin: 10px;
+				
+				}
+				
+			a:hover {
+				color: aqua;
+				}
+				}
+			}
+		.top-content {
+			display: flex;
+			flex-direction: row;
+			margin: 50px auto;
+			padding-bottom: 15px;
+			border-bottom: @black;
+			width: 80%;
+			@media (max-width: 1365px){
+				display: inherit;
+				flex-direction: column;
+				}
+			@media (max-width: @mobile){
+				width: 400px;
+				}
+
+			img {
+				
+				@media (max-width: 1365px){
+					display: inherit;
+					margin: auto;
+					}
+
+				height: 250px;
+				width: 250px;
+				border-radius: 15px;
+				}
+
+			.top-content-text{
+				display: flex;
+				flex-direction: column;
+				margin-left: 50px;
+				align-items: center;
+
+				h1 {
+					font-size: 4rem;
+					font-weight: @bold;
+
+					@media (max-width: 875px){
+						font-size: 3.0rem;
+						}
+					@media (max-width: 677px) {
+						font-size: 2rem;
+					}
+					}
+				h2 {
+					font-weight: @bold;
+					margin-top: 20px;
+					font-size: 2rem;
+					@media (max-width: 677px){
+						font-size: 1.5rem;
+						}
+					}
+				p {
+					margin: auto auto;
+					font-size: 1.020000rem;
+					margin-top: 20px;
+					@media (max-width: 851px){
+
+						width: 60%;
+						
+						}
+					/*border: 1px solid red;*/
+					}
+				}
+			
+			}
+		.bottom-content{
+			display: flex;
+			flex-direction: row;
+			margin: 50px auto;
+			padding-bottom: 15px;
+			width: 80%;
+			
+			@media (max-width: 1365px){
+				display: inherit;
+				flex-direction: column;
+				}
+			@media (max-width: @mobile){
+				width: 400px;
+				}
+			.box {
+					 margin-top: 20px;
+				 p {
+					 margin-top: 20px;
+					}
+				}
+			/*I TRIED USING A VARIABLE FOR FONT PROPERTIES 
+			LIKE THE ASSIGNMENT REQUIRED. iT'S NOT WORKING
+			FOR THESE NESTED H2 ELEMENTS.*/
+				h2 {
+				font-weight: @bold;
+				}
+		/*MIXIN CODE USED HERE FOR THE ANCHOR TAGS*/
+		}
+		footer {
+				display: flex;
+				flex-direction: column;
+				justify-content: start;
+				background: @black;
+				width: 80%;	
+				margin: auto auto;
+				/*border: 1px solid red;*/
+	
+				.footer-tabs {
+					display: flex;
+					justify-content: start;
+					font-size: 1.600000rem;
+					width: 45%;
+					margin: auto 0px;
+					/*border: 1px solid red;*/
+					@media (max-width: 676px){
+						font-size:1.000000rem;
+						}
+						.a:hover;
+						.a;
+			/*	a {
+					text-decoration: none;
+					color: grey;
+					margin: 10px;
+					
+					}
+			*/		
+			/*	a:hover {
+					color: aqua;
+					}
+					}
+			*/
+				p{
+					margin: auto auto;
+					/*border: 1px solid red;*/
+				}
+			}
+		
+		}
+	}
 
