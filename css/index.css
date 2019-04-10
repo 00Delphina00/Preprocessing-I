@@ -275,3 +275,43 @@ body .container .top-content .top-content-text p {
     width: 60%;
   }
 }
+html .container footer,
+body .container footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background: black;
+  width: 80%;
+  margin: auto auto;
+  /*border: 1px solid red;*/
+}
+html .container footer .footer-tabs,
+body .container footer .footer-tabs {
+  display: flex;
+  justify-content: start;
+  font-size: 1.6rem;
+  width: 45%;
+  margin: auto 0px;
+  /*border: 1px solid red;*/
+}
+@media (max-width: 676px) {
+  html .container footer .footer-tabs,
+  body .container footer .footer-tabs {
+    font-size: 1rem;
+  }
+}
+html .container footer .footer-tabs a,
+body .container footer .footer-tabs a {
+  text-decoration: none;
+  color: grey;
+  margin: 10px;
+}
+html .container footer .footer-tabs a:hover,
+body .container footer .footer-tabs a:hover {
+  color: aqua;
+}
+html .container footer p,
+body .container footer p {
+  margin: auto auto;
+  border: 1px solid red;
+}

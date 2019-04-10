@@ -107,7 +107,7 @@ html, body {
 				color: aqua;
 				}
 				}
-		}
+			}
 		.top-content {
 			display: flex;
 			flex-direction: row;
@@ -172,7 +172,43 @@ html, body {
 				}
 			
 			}
-
+		footer {
+				display: flex;
+				flex-direction: column;
+				justify-content: start;
+				background: black;
+				width: 80%;	
+				margin: auto auto;
+				/*border: 1px solid red;*/
+	
+				.footer-tabs {
+					display: flex;
+					justify-content: start;
+					font-size: 1.600000rem;
+					width: 45%;
+					margin: auto 0px;
+					/*border: 1px solid red;*/
+					@media (max-width: 676px){
+						font-size:1.000000rem;
+						}
+				
+				a {
+					text-decoration: none;
+					color: grey;
+					margin: 10px;
+					
+					}
+					
+				a:hover {
+					color: aqua;
+					}
+					}
+				p{
+					margin: auto auto;
+					border: 1px solid red;
+				}
+			}
+		
 		}
 	}
 
