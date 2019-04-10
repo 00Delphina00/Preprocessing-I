@@ -145,7 +145,8 @@ body .container .navigation-bar {
   flex-direction: row;
   justify-content: start;
   background: black;
-  width: 100%;
+  width: 80%;
+  margin: auto auto;
   /*border: 1px solid red;*/
 }
 @media (max-content: 500px) {
@@ -178,4 +179,14 @@ body .container .navigation-bar a {
 html .container .navigation-bar a:hover,
 body .container .navigation-bar a:hover {
   color: aqua;
+}
+html .container .top-content,
+body .container .top-content {
+  display: flex;
+  flex-direction: column;
+  margin: auto auto;
+  background-color: red;
+  border-radius: 40px;
+  border-color: 1px solid red;
+  width: 80%;
 }
